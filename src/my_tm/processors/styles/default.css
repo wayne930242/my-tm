@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'NotoSansCJK';
+    src: url('./fonts/NotoSansCJKtc-VF.ttf') format('truetype');
+    font-weight: 400 700;
+    font-style: normal;
+}
+body { 
+    font-family: 'NotoSansCJK', Arial, sans-serif; 
+    margin: 50px; 
+    font-weight: 500;
+    line-height: 1.6;
+    color: #333;
+}
+h1, h2, h3, h4, h5, h6 { 
+    font-weight: 700; 
+    color: #2c3e50;
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+}
+p { 
+    font-size: 12pt; 
+    margin-bottom: 1em; 
+}
+pre { 
+    background-color: #f4f4f4; 
+    padding: 10px; 
+    border-left: 3px solid #ccc; 
+    overflow: auto;
+    font-size: 11pt;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+code { 
+    background-color: #f4f4f4; 
+    padding: 2px 4px; 
+    font-weight: 400; 
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 3px;
+}
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-bottom: 20px; 
+}
+th, td { 
+    border: 1px solid #ddd; 
+    padding: 8px; 
+    font-weight: 400; 
+    text-align: left;
+}
+th { 
+    background-color: #f2f2f2; 
+    font-weight: 600; 
+}
+tr:nth-child(even) { 
+    background-color: #f9f9f9; 
+}
+a { 
+    color: #2980b9; 
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 10px;
+    color: #555;
+    margin: 1em 0;
+    font-style: italic;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+}
+/* Page Breaks */
+.page-break { 
+    page-break-after: always; 
+}
+/* Headers and Footers */
+@page {
+    size: A4;
+    margin: 50px 50px 50px 50px;
+    @top-center {
+        content: element(header);
+    }
+    @bottom-center {
+        content: element(footer);
+    }
+}
+header {
+    position: running(header);
+    font-size: 12pt;
+    color: #2c3e50;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    text-align: center;
+}
+footer {
+    position: running(footer);
+    font-size: 10pt;
+    color: #555;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    text-align: center;
+}
+/* Table of Contents */
+.toc {
+    margin-bottom: 2em;
+}
+.toc h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+.toc ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.toc li {
+    margin: 0.5em 0;
+}
+.toc a {
+    text-decoration: none;
+    color: #2980b9;
+}
+.toc a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,9 @@
+.env
+**/__pycache__
+temp-*
+
+projects/**
+!projects/example*/
+!projects/example*/**
+projects/example*/processed
+!projects/README.md
