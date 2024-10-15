@@ -1,4 +1,6 @@
-# p_v_monster
+# my_tm
+
+My Translate Machine is a tool designed to assist in the translation of English documents, including PDF, EPUB, and DOCX files, into Traditional Chinese.
 
 ## Installation
 
